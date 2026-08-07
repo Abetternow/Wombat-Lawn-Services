@@ -1,0 +1,1129 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Professional lawn mowing and garden maintenance services in Singleton. 25+ years experience, 25+ Satisfied Customers.">
+    <meta name="keywords" content="lawn mowing, garden maintenance, lawn care, Singleton">
+    <meta name="author" content="Wombat Lawn Mowing Services">
+    <meta name="theme-color" content="#2e7d32">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com; img-src 'self' data:; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com;">
+
+    <title>Wombat Services | Professional Lawn Mowing in Singleton</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+
+        :root {
+
+            --green: #2e7d32;
+
+            --dark: #1b3a1f;
+
+            --light: #f8f9f6;
+
+            --accent: #4caf50;
+
+            --header-height: 84px;
+
+        }
+
+        * { margin:0; padding:0; box-sizing:border-box; }
+
+        html {
+            scroll-behavior:smooth;
+            scroll-padding-top: calc(var(--header-height) + 1rem);
+        }
+        body { font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif; line-height:1.6; color:#333; background:var(--light); }
+
+        header {
+
+            position:fixed; top:0; width:100%; background:rgba(255,255,255,0.97); z-index:100;
+
+            padding:14px 5%; display:flex; flex-wrap:wrap; row-gap:12px; justify-content:space-between; align-items:center; box-shadow:0 2px 15px rgba(0,0,0,0.08);
+
+            transform:translateY(0); transition:transform 0.28s ease;
+
+        }
+
+        header.header-hidden { transform:translateY(-100%); }
+
+        .hero-quote-pill {
+            display:inline-block;
+            background:#ffc93c;
+            color:#1b3a1f;
+            padding:8px 22px;
+            border-radius:999px;
+            font-weight:800;
+            font-size:0.85rem;
+            text-decoration:none;
+            margin-bottom:1rem;
+            box-shadow:0 8px 20px rgba(0,0,0,0.2);
+        }
+
+        .brand { display:flex; align-items:center; gap:1rem; flex-shrink:0; white-space:nowrap; text-decoration:none; }
+
+        .brand-mark { height:88px; width:auto; max-width:260px; object-fit:contain; display:block; flex-shrink:0; }
+
+        /* removed: was hiding embedded data-uri logos */
+
+        @media (max-width:480px) {
+            .brand-mark { height:62px; max-width:200px; }
+            .brand { gap:0.6rem; }
+        }
+
+        @media (max-width:400px) {
+            .brand-mark { height:42px; max-width:130px; }
+        }
+
+        .logo { font-size:1.9rem; font-weight:700; color:var(--green); white-space:nowrap; }
+
+        @media (max-width:640px) {
+            .logo { font-size:1.3rem; }
+        }
+
+        @media (max-width:400px) {
+            .logo { font-size:0.92rem; }
+        }
+
+        .header-actions { display:flex; align-items:center; gap:0.75rem; flex-wrap:nowrap; flex-shrink:0; }
+
+        @media (max-width:400px) {
+            .header-actions { gap:0.5rem; }
+            .btn { padding:12px 18px !important; font-size:0.82rem !important; }
+        }
+
+        nav { display:flex; align-items:center; gap:1.75rem; }
+
+        @media (max-width:1024px) {
+            nav { display:none; }
+        }
+
+        nav a { text-decoration:none; color:#333; font-weight:500; transition:color 0.3s; white-space:nowrap; }
+
+        nav a:hover { color:var(--green); }
+
+        .nav-toggle {
+            display:none;
+            flex-direction:column;
+            justify-content:center;
+            gap:5px;
+            background:none;
+            border:none;
+            cursor:pointer;
+            padding:8px;
+            flex-shrink:0;
+        }
+
+        .nav-toggle span { display:block; width:24px; height:2px; background:var(--dark); }
+
+        @media (max-width:1024px) {
+            .nav-toggle { display:flex; }
+        }
+
+        .mobile-nav {
+            position:absolute;
+            top:100%;
+            left:0;
+            right:0;
+            background:#fff;
+            box-shadow:0 12px 25px rgba(0,0,0,0.12);
+            display:flex;
+            flex-direction:column;
+            padding:0.5rem 5% 1.5rem;
+            transform:translateY(-8px);
+            opacity:0;
+            pointer-events:none;
+            transition:opacity 0.2s ease, transform 0.2s ease;
+            z-index:99;
+        }
+
+        .mobile-nav.open { opacity:1; transform:translateY(0); pointer-events:auto; }
+
+        .mobile-nav a {
+            padding:0.9rem 0;
+            border-bottom:1px solid #eee;
+            color:#333;
+            text-decoration:none;
+            font-weight:500;
+            display:flex;
+            align-items:center;
+            gap:8px;
+        }
+
+        .mobile-nav .btn { margin-top:1rem; text-align:center; }
+
+        @media (min-width:1025px) {
+            .mobile-nav { display:none; }
+        }
+
+        .hero {
+            position:relative;
+            overflow:hidden;
+            min-height:calc(100vh - var(--header-height));
+            padding: calc(var(--header-height) + 1rem) 5% 3rem;
+            display:flex;
+            align-items:center;
+            justify-content:space-between;
+            gap:2rem;
+            color:white;
+        }
+
+        .header-call {
+            display:flex;
+            align-items:center;
+            gap:6px;
+            flex-shrink:0;
+            padding:8px 16px;
+            border-radius:999px;
+            background:var(--light);
+            border:1px solid rgba(0,0,0,0.08);
+            text-decoration:none;
+            color:var(--dark);
+            font-weight:700;
+            font-size:0.85rem;
+            white-space:nowrap;
+        }
+
+        .header-call:hover { background:#eee; }
+
+        .header-call i { color:var(--green); font-size:0.9rem; }
+
+        .hero-cta-row {
+            display:flex;
+            align-items:center;
+            gap:16px;
+            flex-wrap:wrap;
+            margin-top:1.75rem;
+        }
+
+        .pensioner-badge {
+            display:inline-flex;
+            align-items:center;
+            gap:8px;
+            background:#ffc93c;
+            color:#1b3a1f;
+            padding:10px 20px;
+            border-radius:999px;
+            font-weight:800;
+            font-size:0.85rem;
+            white-space:nowrap;
+            box-shadow:0 10px 24px rgba(0,0,0,0.22);
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(90deg, rgba(0,0,0,0.12) 0%, rgba(0,0,0,0.34) 56%, rgba(0,0,0,0.72) 100%);
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .hero-picture {
+            position: relative;
+            z-index: 1;
+            width:min(46%, 560px);
+            flex-shrink:0;
+        }
+
+        .hero-bg {
+            display:block;
+            width:100%;
+            height:auto;
+            max-height:560px;
+            object-fit:cover;
+            object-position:center center;
+            border-radius:16px;
+            box-shadow:0 16px 50px rgba(0,0,0,0.28);
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width:560px;
+            width:min(48%, 560px);
+            padding:0;
+            margin:0;
+            text-align:left;
+            color:#fff;
+        }
+
+        .hero h1 {
+            font-size:3.2rem;
+            line-height:1.02;
+            margin-bottom:0.8rem;
+            letter-spacing:-0.03em;
+        }
+
+        .hero p {
+            font-size:1.08rem;
+            margin-bottom:1.4rem;
+            opacity:0.95;
+            max-width:38rem;
+            margin-left:0;
+        }
+
+        .hero .btn {
+            padding:16px 42px;
+            box-shadow:0 18px 40px rgba(0,0,0,0.2);
+        }
+
+        @media (max-width:900px) {
+            .hero {
+                min-height:auto;
+                padding:calc(var(--header-height) + 1.5rem) 5% 3rem;
+                flex-direction:column;
+                align-items:flex-start;
+                justify-content:center;
+            }
+            .hero::before {
+                background: linear-gradient(180deg, rgba(0,0,0,0.18) 0%, rgba(0,0,0,0.55) 100%);
+            }
+            .hero-picture {
+                width:100%;
+                max-width:none;
+            }
+            .hero-bg {
+                max-height:360px;
+                border-radius:12px;
+            }
+            .hero-content {
+                width:100%;
+                max-width:none;
+                text-align:left;
+                padding:1.25rem 0 0;
+            }
+            .hero h1 { font-size: 2.4rem; }
+            .hero p { font-size: 1rem; }
+        }
+
+        @media (max-width:400px) {
+            .hero h1 { font-size: 1.9rem; }
+        }
+
+        .btn {
+
+            padding:15px 38px; background:var(--green); color:white; border-radius:50px; text-decoration:none; font-weight:600; display:inline-block; text-align:center; transition:all 0.3s;
+
+        }
+
+        .btn:hover { background:var(--accent); transform:translateY(-4px); }
+
+        section { padding:110px 5%; scroll-margin-top: calc(var(--header-height) + 1rem); }
+
+        .section-title { text-align:center; font-size:2.6rem; margin-bottom:3rem; color:var(--dark); }
+
+        .section-logo {
+            display:block;
+            height:64px;
+            width:auto;
+            margin:0 auto 1.25rem;
+        }
+
+        .section-eyebrow {
+            display:block;
+            text-align:center;
+            font-size:0.85rem;
+            font-weight:700;
+            letter-spacing:0.08em;
+            text-transform:uppercase;
+            color:var(--green);
+            margin-bottom:0.6rem;
+        }
+
+        .values { display:grid; grid-template-columns:repeat(auto-fit, minmax(280px,1fr)); gap:2.5rem; text-align:center; }
+
+        .value-card { background:white; padding:2.5rem 1.5rem; border-radius:12px; box-shadow:0 8px 25px rgba(0,0,0,0.07); }
+
+        .services { display:grid; grid-template-columns:repeat(auto-fit, minmax(300px,1fr)); gap:2rem; }
+
+        .service-card {
+
+            background:white; border-radius:12px; overflow:hidden; box-shadow:0 10px 30px rgba(0,0,0,0.08); transition:transform 0.3s;
+
+        }
+
+        .service-card:hover { transform:translateY(-12px); }
+
+        .service-card img { width:100%; height:240px; object-fit:cover; }
+
+        .service-card .content { padding:1.8rem; }
+
+        .process { background:#f1f5f0; }
+
+        .steps { display:grid; grid-template-columns:repeat(auto-fit, minmax(260px,1fr)); gap:3rem; }
+
+        .step { text-align:center; }
+
+        .step-num {
+
+            width:75px; height:75px; background:var(--green); color:white; border-radius:50%; margin:0 auto 1.5rem;
+
+            display:flex; align-items:center; justify-content:center; font-size:2rem; font-weight:bold;
+
+        }
+
+        .stats { display:grid; grid-template-columns:repeat(auto-fit, minmax(200px,1fr)); gap:2rem; text-align:center; background:var(--dark); color:white; padding:5rem 5%; border-radius:16px; }
+
+        .contact-section { background:var(--green); color:white; text-align:center; }
+
+        .contact-instagram {
+            display:inline-flex;
+            align-items:center;
+            gap:10px;
+            background:rgba(255,255,255,0.12);
+            border:1.5px solid rgba(255,255,255,0.5);
+            padding:12px 26px;
+            border-radius:999px;
+            margin:0 auto 2rem;
+            color:white;
+            text-decoration:none;
+            font-weight:600;
+            transition:background 0.2s ease;
+        }
+
+        .contact-instagram:hover { background:rgba(255,255,255,0.22); }
+
+        .contact-instagram i { font-size:1.25rem; }
+        .contact-form {
+            max-width:720px;
+            margin:0 auto;
+            display:grid;
+            gap:1rem;
+            text-align:left;
+        }
+        .contact-form input,
+        .contact-form textarea {
+            width:100%;
+            padding:1rem 1.1rem;
+            border-radius:12px;
+            border:1px solid rgba(255,255,255,0.7);
+            background:rgba(255,255,255,0.12);
+            color:white;
+            font-size:1rem;
+            outline:none;
+        }
+        .contact-form input::placeholder,
+        .contact-form textarea::placeholder {
+            color:rgba(255,255,255,0.75);
+        }
+        .contact-form textarea { min-height:160px; resize:vertical; }
+        .contact-form button {
+            width:min(240px,100%);
+            margin:0 auto;
+            padding:1rem 1.6rem;
+            border-radius:50px;
+            border:0;
+            background:white;
+            color:var(--green);
+            font-weight:700;
+            cursor:pointer;
+            transition:transform 0.25s ease, background 0.25s ease;
+        }
+        .contact-form button:hover { background:#f4f4f4; transform:translateY(-2px); }
+
+        footer { background:var(--dark); color:#ccc; padding:4rem 5% 2rem; text-align:center; }
+
+        .floating-cta {
+            display:inline-flex;
+            align-items:center;
+            gap:10px;
+            background:var(--accent);
+            color:white;
+            padding:14px 22px;
+            border-radius:999px;
+            box-shadow:0 10px 30px rgba(0,0,0,0.2);
+            font-weight:600;
+            text-decoration:none;
+            margin-left:1rem;
+            flex-shrink:0;
+        }
+
+        .floating-cta:hover { transform:translateY(-1px); }
+
+        .floating-cta i { font-size:1rem; }
+
+        a:focus-visible,
+        button:focus-visible,
+        input:focus-visible,
+        textarea:focus-visible {
+            outline:3px solid var(--accent);
+            outline-offset:3px;
+        }
+
+        @media (max-width:768px) {
+
+            :root { --header-height: 68px; }
+
+        }
+
+        /* Modal styles for service details */
+        .hidden { display: none !important; }
+        #service-modal { position:fixed; inset:0; display:none; align-items:center; justify-content:center; z-index:2000; }
+        #service-modal:not(.hidden) { display:flex; }
+        #service-modal .modal-backdrop { position:absolute; inset:0; background:rgba(0,0,0,0.6); }
+        #service-modal .modal-content {
+            position:relative;
+            background:#fff;
+            color:#222;
+            width:90%;
+            max-width:720px;
+            max-height:92vh;
+            overflow:auto;
+            padding:1.25rem;
+            border-radius:12px;
+            box-shadow:0 20px 60px rgba(0,0,0,0.5);
+            z-index:1;
+            display:flex;
+            flex-direction:column;
+            gap:0.75rem;
+            min-height:140px;
+        }
+        #service-modal .modal-close { position:absolute; top:10px; right:12px; background:transparent; border:0; font-size:1.6rem; cursor:pointer; color:#333; }
+        #service-modal img { width:100%; height:auto; border-radius:8px; object-fit:cover; max-height:360px; display:block; }
+        #service-modal h3 { margin:0 0 0.5rem 0; font-size:1.25rem; }
+        #service-modal p { margin:0; line-height:1.5; }
+        #service-modal .modal-close { z-index:2; }
+
+    </style>
+
+</head>
+
+<body>
+
+
+
+    <header>
+
+        <a href="#" class="brand" aria-label="Wombat Lawn Services — back to home">
+            <img class="brand-mark" src="images/logo.png" alt="Wombat Ride on icon">
+
+            <div class="logo">Wombat Lawn Services</div>
+        </a>
+
+        <nav>
+
+            <a href="#services">Services</a>
+
+            <a href="#process">Process</a>
+
+            <a href="#about">About</a>
+
+            <a href="#contact">Contact</a>
+
+        </nav>
+
+        <div class="header-actions">
+            <a href="tel:+16313244339" class="header-call" aria-label="Call Wombat Lawn Services">
+                <i class="fas fa-phone"></i> Call Now
+            </a>
+
+            <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNav">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+
+        <nav id="mobileNav" class="mobile-nav">
+            <a href="#services">Services</a>
+            <a href="#process">Process</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+            <a href="tel:+16313244339"><i class="fas fa-phone"></i> Call Now</a>
+            <a href="#contact" class="btn">Get a Quote</a>
+        </nav>
+
+    </header>
+
+
+
+    <section class="hero">
+
+                <picture class="hero-picture">
+                
+                <img class="hero-bg" src="images/hero-bg.jpg" alt="Yellow lawn mower resting on a tidy green yard outdoors">
+            </picture>
+<div class="hero-content">
+
+            <a href="#contact" class="hero-quote-pill">Get a Quote</a>
+
+            <h1>Singletons Lawn Mowing Experts</h1>
+
+            <p>Keeping your lawn tidy shouldn't be a hassle. Wombat Lawn Mowing Services delivers reliable, affordable lawn care for homes across Wider Singleton — so you can enjoy a clean, fresh yard without lifting a finger.</p>
+
+            <div class="hero-cta-row">
+                <a href="#contact" class="btn">Start Your Project</a>
+                <span class="pensioner-badge"><i class="fa-solid fa-tag"></i> Pensioner Discounts Available</span>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- Values -->
+
+    <section id="about">
+
+        <span class="section-eyebrow">Why Wombat</span>
+        <h2 class="section-title">Built on Experience, Motivation &amp; Reliability</h2>
+
+        <div class="values">
+
+            <div class="value-card">
+
+                <h3>Experienced</h3>
+
+                <p>Whether you need a quick tidy-up or regular lawn maintenance, we show up on time and get the job done right. No fuss, no stress — just a clean, healthy lawn every visit.</p>
+
+            </div>
+
+            <div class="value-card">
+
+                <h3>Motivated</h3>
+
+                <p>We’re locals who genuinely enjoy making lawns look great. Whether it’s a quick mow or a full tidy‑up, we bring energy, care, and attention to detail. A well‑kept lawn feels good — and we’re here to make sure yours does, every time.</p>
+
+            </div>
+
+            <div class="value-card">
+
+                <h3>Reliable</h3>
+
+                <p>We take pride in doing the small things properly — tidy edges, clean paths, and a finish that makes your lawn look cared for. It's the kind of service we'd want at our own homes.</p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- Services -->
+
+    <section id="services">
+
+        <img class="section-logo" src="images/logo.png" alt="Wombat Lawn Services">
+
+        <div style="display:flex; align-items:center; justify-content:space-between; gap:1rem; flex-wrap:wrap; margin-bottom:1.5rem;">
+            <h2 class="section-title" style="margin-bottom:0;">Our Services</h2>
+            <a href="tel:+16313244339" class="floating-cta" aria-label="Call Wombat Lawn Services">
+                <i class="fas fa-phone"></i> Call Now
+            </a>
+        </div>
+
+        <div class="services">
+
+            <div class="service-card">
+
+                <img src="images/service-1.jpg" alt="Happy customer with a freshly mowed lawn">
+
+                <div class="content">
+
+                    <h3>Your Lawn, Our Priority</h3>
+
+        <p>Our work is built on consistency and pride. You can count on us to show up when we say we will and deliver a lawn that looks fresh, tidy, and professionally cared for.</p>
+
+                    <a href="javascript:void(0)" class="read-more" style="color:var(--green); font-weight:500;">Read More →</a>
+
+                </div>
+
+            </div>
+
+            <div class="service-card">
+
+                <img src="images/service-2.jpg" alt="Awesome Lawn Care">
+
+                <div class="content">
+
+                    <h3>More than Just Mowing</h3>
+
+                    <p>We offer a full range of lawn‑care services to keep your property looking its best — from edging and trimming to seasonal tidy‑ups and general garden maintenance.</p>
+
+                    <a href="javascript:void(0)" class="read-more" style="color:var(--green); font-weight:500;">Read More →</a>
+
+                </div>
+
+            </div>
+
+            <div class="service-card">
+                <img src="images/service-3.jpg" alt="Hedge trimming">
+                <div class="content">
+
+                    <h3>Hedge Trimming a Specialty</h3>
+
+                    <p>Neat, well‑shaped hedges can transform the look of your property. Our hedge trimming service delivers clean lines, balanced shaping, and careful attention to detail, ensuring your garden stays tidy, healthy, and beautifully presented all year round.</p>
+
+                    <a href="javascript:void(0)" class="read-more" style="color:var(--green); font-weight:500;">Read More →</a>
+
+                </div>
+
+            </div>
+
+            <div class="service-card">
+
+                <img src="images/service-4.jpg" alt="Maintenance">
+
+                <div class="content">
+
+                    <h3>Maintenance</h3>
+
+                    <p>Year-round lawn and garden care to keep your landscape pristine.</p>
+
+                    <a href="javascript:void(0)" class="read-more" style="color:var(--green); font-weight:500;">Read More →</a>
+
+                </div>
+
+            </div>
+
+            <div class="service-card">
+
+                <img src="images/service-5.jpg" alt="Lawn Edging and Borders">
+
+                <div class="content">
+
+                    <h3>Lawn Edging & Borders</h3>
+
+                    <p>Sharp edges and clean borders give your lawn a polished look. We trim paths, driveways, and garden beds with precision so everything feels neat and finished.</p>
+
+                    <a href="javascript:void(0)" class="read-more" style="color:var(--green); font-weight:500;">Read More →</a>
+
+                </div>
+
+            </div>
+
+            <div class="service-card">
+
+                <img src="images/service-6.jpg" alt="Seasonal Clean-ups">
+
+                <div class="content">
+
+                    <h3>Seasonal Clean-ups</h3>
+
+                    <p>We remove leaves, debris, and overgrowth so your property stays tidy through every season. Our clean-ups leave your lawn looking refreshed and ready for the next weather change.</p>
+
+                    <a href="javascript:void(0)" class="read-more" style="color:var(--green); font-weight:500;">Read More →</a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+<!-- Process -->
+
+    <section id="process" class="process">
+
+        <img class="section-logo" src="images/logo.png" alt="Wombat Lawn Services">
+
+        <h2 class="section-title">How It Works</h2>
+
+        <div class="steps">
+
+            <div class="step">
+
+                <div class="step-num">1</div>
+
+                <h3>Consultation</h3>
+
+                <p>Initial discussion on your property, budget, and timeline.</p>
+
+            </div>
+
+            <div class="step">
+
+                <div class="step-num">2</div>
+
+                <h3>Regular Maintenance Plans</h3>
+
+                <p>Our regular maintenance plans keep your lawn looking its best all year round. With scheduled visits tailored to your property, we handle the mowing, edging, and general upkeep so you can enjoy a consistently tidy, healthy outdoor space without the hassle.</p>
+
+            </div>
+
+            <div class="step">
+
+                <div class="step-num">3</div>
+
+                <h3>Seasonal Clean-ups</h3>
+
+                <p>Seasonal changes can leave your lawn covered in leaves, debris, and overgrowth. Our seasonal clean‑up service restores order with thorough clearing, trimming, and tidy‑ups, giving your property a fresh, well‑kept look heading into the next season.</p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- Stats -->
+
+    <section>
+
+        <div class="stats">
+
+            <div><h2>25+</h2><p>Years of Experience</p></div>
+
+            <div><h2>Experience that shows</h2><p>every mow-every visit</p></div>
+
+            <div><h2>100%</h2><p>WOMBAT FRIENDLY</p></div>
+
+            <div><h2>98%</h2><p>Client Retention</p></div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- Contact / CTA -->
+
+    <section id="contact" class="contact-section">
+
+        <h2 class="section-title" style="color:white;">Ready to Transform Your Outdoor Space?</h2>
+
+        <p style="font-size:1.4rem; max-width:700px; margin:0 auto 2rem;">Call us at (61) 09249660 or fill out the form for a free consultation.</p>
+
+        <a href="#" class="contact-instagram" aria-label="Find us on Instagram">
+            <i class="fa-brands fa-instagram"></i> Find us on Instagram
+        </a>
+
+        <form id="contact-form" name="contact-form" class="contact-form" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+            <input type="hidden" name="form-name" value="contact-form">
+            <p style="position:absolute; left:-9999px; opacity:0; height:1px; width:1px; overflow:hidden;" aria-hidden="true">
+                <label>Leave this field blank: <input name="bot-field"></label>
+            </p>
+            <input type="text" name="name" placeholder="Your name" required>
+            <input type="email" name="email" placeholder="Your email" required>
+            <input type="tel" name="phone" placeholder="Phone number" required>
+            <textarea name="message" placeholder="What can we help with?" required></textarea>
+            <button type="submit">Send Request</button>
+        </form>
+
+    </section>
+
+
+
+    <footer>
+
+        <p>Wombat Lawn Mowing Services is committed to providing reliable, high‑quality lawn care for homes across Singleton. We take pride in the small details and the consistent service that keeps your outdoor spaces looking their best.</p>
+
+        <p>If you’re looking for friendly, dependable lawn maintenance you can count on, we’re here to help. Get in touch anytime for a free quote or to book your next service.</p>
+
+    </footer>
+
+
+
+
+    <!-- Service details modal -->
+    <div id="service-modal" class="hidden" aria-hidden="true" role="dialog" aria-modal="true" tabindex="-1">
+        <div class="modal-backdrop"></div>
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Close">&times;</button>
+            <h3 id="modal-title"></h3>
+            <div id="modal-image"></div>
+            <p id="modal-desc"></p>
+        </div>
+    </div>
+
+
+
+    <script>
+
+        // Input validation and sanitization utilities
+        const ValidationUtils = {
+            sanitizeHTML: function(str) {
+                if (!str || typeof str !== 'string') return '';
+                const div = document.createElement('div');
+                div.textContent = str;
+                return div.innerHTML;
+            },
+            
+            validateEmail: function(email) {
+                if (!email || typeof email !== 'string') return false;
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                return email.length <= 254 && emailRegex.test(email.trim());
+            },
+            
+            validatePhone: function(phone) {
+                if (!phone || typeof phone !== 'string') return false;
+                const phoneRegex = /^[+]?[(]?[0-9]{1,4}[)]?[-\s.]?[(]?[0-9]{1,4}[)]?[-\s.]?[0-9]{1,9}$/;
+                return phoneRegex.test(phone.replace(/\s/g, '').trim());
+            },
+            
+            validateName: function(name) {
+                if (!name || typeof name !== 'string') return false;
+                const trimmed = name.trim();
+                return trimmed.length >= 2 && trimmed.length <= 100 && /^[a-zA-Z\s'-]+$/.test(trimmed);
+            },
+            
+            validateMessage: function(message) {
+                if (!message || typeof message !== 'string') return false;
+                const trimmed = message.trim();
+                return trimmed.length >= 10 && trimmed.length <= 5000;
+            }
+        };
+
+        // Smooth scroll with error handling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                if (this.getAttribute('href') !== '#') {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    const target = document.querySelector(targetId);
+                    if (target) {
+                        target.scrollIntoView({ behavior: 'smooth' });
+                    } else {
+                        console.warn('Navigation target not found:', targetId);
+                    }
+                }
+            });
+        });
+
+        // Keep --header-height in sync with the header's real rendered size.
+        // The header can be one row or two rows depending on screen width, so a
+        // fixed guessed number will drift — measuring it directly never will.
+        const siteHeader = document.querySelector('header');
+
+        // Mobile hamburger toggle
+        const navToggle = document.getElementById('navToggle');
+        const mobileNav = document.getElementById('mobileNav');
+        if (navToggle && mobileNav) {
+            navToggle.addEventListener('click', function() {
+                const isOpen = mobileNav.classList.toggle('open');
+                navToggle.setAttribute('aria-expanded', isOpen);
+            });
+            mobileNav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+                mobileNav.classList.remove('open');
+                navToggle.setAttribute('aria-expanded', 'false');
+            }));
+        }
+        function syncHeaderHeight() {
+            if (!siteHeader) return;
+            const wasHidden = siteHeader.classList.contains('header-hidden');
+            if (wasHidden) siteHeader.classList.remove('header-hidden');
+            const h = siteHeader.offsetHeight;
+            document.documentElement.style.setProperty('--header-height', h + 'px');
+            if (wasHidden) siteHeader.classList.add('header-hidden');
+        }
+        syncHeaderHeight();
+        window.addEventListener('resize', syncHeaderHeight);
+        window.addEventListener('load', syncHeaderHeight);
+
+        // Auto-hide header: hides on scroll down, reappears on scroll up or near top
+        let lastScrollY = window.scrollY;
+        let ticking = false;
+        function updateHeaderVisibility() {
+            const currentScrollY = window.scrollY;
+            const scrolledDown = currentScrollY > lastScrollY;
+            const pastThreshold = currentScrollY > (siteHeader ? siteHeader.offsetHeight : 80);
+
+            if (scrolledDown && pastThreshold) {
+                siteHeader.classList.add('header-hidden');
+                if (mobileNav) mobileNav.classList.remove('open');
+                if (navToggle) navToggle.setAttribute('aria-expanded', 'false');
+            } else {
+                siteHeader.classList.remove('header-hidden');
+            }
+            lastScrollY = currentScrollY;
+            ticking = false;
+        }
+        if (siteHeader) {
+            window.addEventListener('scroll', function() {
+                if (!ticking) {
+                    window.requestAnimationFrame(updateHeaderVisibility);
+                    ticking = true;
+                }
+            }, { passive: true });
+        }
+
+        // Service modal behavior
+        const serviceSpiels = {
+            'Your Lawn, Our Priority': 'We take pride in consistent, reliable lawn care. Every visit includes a thorough mow, clean edging, and a careful finish so your yard looks freshly maintained without any stress for you.',
+            'More than Just Mowing': 'Our service goes beyond mowing. We provide edging, trimming, seasonal clean-ups, and garden maintenance so your whole outdoor space stays neat, healthy, and easy to enjoy.',
+            'Hedge Trimming a Specialty': 'Neat, well-shaped hedges make a huge difference. We shape, trim, and maintain your hedges with precision so they look tidy, balanced, and professionally finished every time.',
+            'Maintenance': 'Year-round maintenance keeps your lawn looking its best. From regular mowing to debris removal and seasonal attention, we handle the work so your yard stays lush and looking cared for all year.',
+            'Lawn Edging & Borders': 'We create crisp lawn edges and clean borders so your property looks neat and finished. This service helps define your landscaping and keeps grass from spreading into walkways and beds.',
+            'Seasonal Clean-ups': 'Seasonal clean-ups remove leaves, branches, and debris so your yard stays healthy and presentable. We prepare your lawn for every season with a deep tidy and careful attention to detail.'
+        };
+        // Service modal behavior with XSS prevention
+        document.querySelectorAll('a.read-more').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                try {
+                    const card = this.closest('.service-card');
+                    if (!card) {
+                        console.error('Service card element not found');
+                        return;
+                    }
+                    
+                    const titleEl = card.querySelector('h3');
+                    const descEl = card.querySelector('p');
+                    const imgEl = card.querySelector('img');
+                    
+                    if (!titleEl) {
+                        console.error('Title element not found in service card');
+                        return;
+                    }
+                    
+                    const title = titleEl.textContent || '';
+                    const summary = descEl ? descEl.textContent : '';
+                    const imgSrc = imgEl ? imgEl.getAttribute('src') : '';
+                    
+                    // Sanitize and set modal content safely
+                    const titleEl_modal = document.getElementById('modal-title');
+                    if (titleEl_modal) {
+                        titleEl_modal.textContent = title; // Use textContent, not innerHTML
+                    }
+                    
+                    const modalImage = document.getElementById('modal-image');
+                    if (modalImage) {
+                        modalImage.innerHTML = ''; // Clear first
+                        if (imgSrc && typeof imgSrc === 'string') {
+                            // Validate image source is data URI or safe URL
+                            if (imgSrc.startsWith('data:image/') || imgSrc.startsWith('http')) {
+                                const imgElement = document.createElement('img');
+                                imgElement.setAttribute('src', imgSrc);
+                                imgElement.setAttribute('alt', ValidationUtils.sanitizeHTML(title));
+                                imgElement.setAttribute('style', 'max-width:100%; height:auto; border-radius:8px;');
+                                modalImage.appendChild(imgElement);
+                            }
+                        }
+                    }
+                    
+                    const descEl_modal = document.getElementById('modal-desc');
+                    if (descEl_modal) {
+                        descEl_modal.textContent = serviceSpiels[title] || summary;
+                    }
+                    
+                    const modal = document.getElementById('service-modal');
+                    if (modal) {
+                        modal.classList.remove('hidden');
+                        modal.setAttribute('aria-hidden', 'false');
+                        modal.focus();
+                    }
+                } catch (error) {
+                    console.error('Error opening modal:', error);
+                }
+            });
+        });
+
+        document.querySelectorAll('#service-modal .modal-close, #service-modal .modal-backdrop').forEach(el => {
+            el.addEventListener('click', function() {
+                const modal = document.getElementById('service-modal');
+                modal.classList.add('hidden');
+                modal.setAttribute('aria-hidden', 'true');
+            });
+        });
+
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                const modal = document.getElementById('service-modal');
+                if (modal && !modal.classList.contains('hidden')) {
+                    modal.classList.add('hidden');
+                    modal.setAttribute('aria-hidden', 'true');
+                }
+            }
+        });
+
+        // Secure form submission with validation, spam protection, and Netlify Forms support
+        const contactForm = document.getElementById('contact-form');
+        if (contactForm) {
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                try {
+                    // Get form fields with null checks
+                    const nameInput = contactForm.querySelector('input[name="name"]');
+                    const emailInput = contactForm.querySelector('input[name="email"]');
+                    const phoneInput = contactForm.querySelector('input[name="phone"]');
+                    const messageInput = contactForm.querySelector('textarea[name="message"]');
+                    const botField = contactForm.querySelector('input[name="bot-field"]');
+                    
+                    if (!nameInput || !emailInput || !phoneInput || !messageInput) {
+                        console.error('One or more form fields not found');
+                        alert('Form validation error. Please refresh and try again.');
+                        return;
+                    }
+                    
+                    const name = (nameInput.value || '').trim();
+                    const email = (emailInput.value || '').trim();
+                    const phone = (phoneInput.value || '').trim();
+                    const message = (messageInput.value || '').trim();
+                    
+                    if (botField && botField.value.trim() !== '') {
+                        console.warn('Spam detected via honeypot field');
+                        return;
+                    }
+                    
+                    // Validate all fields
+                    let errors = [];
+                    
+                    if (!ValidationUtils.validateName(name)) {
+                        errors.push('Name must be 2-100 characters and contain only letters, spaces, hyphens, or apostrophes.');
+                    }
+                    
+                    if (!ValidationUtils.validateEmail(email)) {
+                        errors.push('Please enter a valid email address.');
+                    }
+                    
+                    if (!ValidationUtils.validatePhone(phone)) {
+                        errors.push('Please enter a valid phone number.');
+                    }
+                    
+                    if (!ValidationUtils.validateMessage(message)) {
+                        errors.push('Message must be between 10 and 5000 characters.');
+                    }
+                    
+                    // Display validation errors
+                    if (errors.length > 0) {
+                        alert('Please fix the following errors:\n\n' + errors.join('\n'));
+                        return;
+                    }
+                    
+                    const formData = new FormData(contactForm);
+                    formData.set('name', name);
+                    formData.set('email', email);
+                    formData.set('phone', phone);
+                    formData.set('message', message);
+                    
+                    fetch('/', {
+                        method: 'POST',
+                        body: formData
+                    }).then(function(response) {
+                        if (!response.ok) {
+                            throw new Error('Form submission failed with status ' + response.status);
+                        }
+                        alert('Thanks for reaching out! Your request has been received. We will contact you soon at ' + ValidationUtils.sanitizeHTML(email) + ' or ' + ValidationUtils.sanitizeHTML(phone) + '.');
+                        contactForm.reset();
+                        document.activeElement.blur();
+                    }).catch(function(error) {
+                        console.error('Form submission error:', error);
+                        alert('An error occurred while sending your message. Please try again later or call us directly.');
+                    });
+                } catch (error) {
+                    console.error('Form submission error:', error);
+                    alert('An error occurred while processing your request. Please try again.');
+                }
+            });
+        } else {
+            console.warn('Contact form element not found');
+        }
+
+    </script>
+
+</body>
+
+</html>
+
